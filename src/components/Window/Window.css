@@ -1,0 +1,30 @@
+.window {
+  border-radius: 2px;
+  width: 300px;
+  height: 300px;
+}
+
+.visitor-img {
+  width: 100%;
+  height: 100%;
+}
+
+.visitor-container {
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.visitor-container:hover {
+  cursor: pointer;
+}
+
+.visitor-container h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}

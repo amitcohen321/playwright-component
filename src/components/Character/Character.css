@@ -1,0 +1,10 @@
+img.character-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+div.character-cont {
+    padding: 0px;
+    margin: 20px;
+    min-width: 160px;
+}

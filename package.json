@@ -3,19 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-react": "^7.18.6",
+    "@clickcease/cc-client-components-lib": "^1.0.38",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.3.4",
+    "babel-loader": "^9.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
     "react-scripts": "5.0.1",
+    "sinon": "^15.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-ct": "playwright test -c playwright-ct.config.ts",
+    "test-ct-debug": "PWDEBUG=1 playwright test -c playwright-ct.config.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@playwright/experimental-ct-react": "^1.31.2",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "jest": "^27.5.1",
+    "jest-environment-jsdom": "^29.4.3",
+    "typescript": "^4.9.5",
+    "webpack-cli": "^5.0.1"
   }
 }

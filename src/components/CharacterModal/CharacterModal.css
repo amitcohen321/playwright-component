@@ -1,0 +1,25 @@
+.character-modal {
+    border: 3px solid black;
+    position: absolute;
+    padding: 30px;
+    max-width: auto;
+    height: auto;
+    background-color: #faf9f6;
+}
+
+.character-modal:hover {
+    cursor: pointer;
+  }
+
+.characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+
+}

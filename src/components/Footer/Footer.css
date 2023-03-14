@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+div.score-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.score-board button {
+  margin: 0 1rem;
+}
+
+div.score-board span {
+  margin: 0 1.1rem;
+  text-align: center;
+}
+

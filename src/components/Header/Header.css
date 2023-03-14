@@ -1,0 +1,13 @@
+header {
+  margin-top: -100px;
+}
+
+.headline {
+  color: white;
+  font-size: 45px;
+  margin: 0px;
+}
+
+#root > div > div > header > button {
+  margin-top: 40px;
+}
