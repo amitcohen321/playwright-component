@@ -249,14 +249,14 @@ test("validate charactermodal renders 4 characters", async ({
 });
 
 test.only("configure context through hooks config", async ({ page, mount }) => {
-  await page.route("**/users*", async (route) => {
+  await page.route("**/users*", async (route) => { 
     await route.fulfill({
       status: 200,
       contentType: "application/json",
       body: JSON.stringify(data),
     });
   });
-
+  
   const component = await mount(<CharacterModal />, {
     hooksConfig: {
       overrides: {

@@ -19,9 +19,12 @@ const CharacterModal = () => {
         (
           <div>
             <h1> Choose Your Character </h1>
-            {isError ? (<div> {error.message} </div>) : (<div className="characters-list">
-              {characters.map((character) => (<Character key={character.id} character={character} />))}
-            </div>)}
+            {isError ?
+              (<div> {error.message} </div>)
+              :
+              (<div className="characters-list">
+                {characters.map((character) => (<Character key={character.id} character={character} />))}
+              </div>)}
             <button onClick={refetch}> Refetch Characters </button>
           </div>
         )}

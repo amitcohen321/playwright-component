@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test-ct": "playwright test -c playwright-ct.config.ts",
-    "test-ct-debug": "PWDEBUG=1 playwright test -c playwright-ct.config.ts"
+    "test-ct-debug": "PWDEBUG=1 playwright test -c playwright-ct.config.ts --debug"
   },
   "eslintConfig": {
     "extends": [
